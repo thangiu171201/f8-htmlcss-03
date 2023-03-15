@@ -41,6 +41,28 @@ a {
     border: 1px solid #2e80ce;
 }
 
+.section__heading {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    /* identical to box height, or 120% */
+    /* text-align: center; */
+    letter-spacing: -0.02em;
+    color: #10375c;
+}
+
+.section__desc {
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    /* or 167% */
+
+    /* text-align: center; */
+
+    color: #575f66;
+}
+
 /* =====Header====== */
 
 .header {
@@ -154,6 +176,7 @@ a {
 }
 
 .hero {
+    padding-bottom: 110px;
     margin-top: 76px;
     display: flex;
     justify-content: space-between;
@@ -221,4 +244,84 @@ a {
 .hero__img:last-child {
     width: 210px;
     height: 410px;
+}
+
+/*====== All Services======= */
+.services {
+    padding: 170px 0;
+    background: #fff;
+}
+
+.services__desc,
+.services__heading {
+    text-align: center;
+}
+.services__desc {
+    max-width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services__row {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.services__list {
+    /* width: 40%; */
+    /* padding: 22px; */
+}
+.services-item {
+    width: 470px;
+    padding: 21px 22px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    background: #fff;
+    transition: 0.2s;
+}
+
+.services-item__img {
+    width: 60px;
+    height: 60px;
+    background: #2e80ce;
+    box-shadow: 0px 8px 16px rgba(40, 155, 222, 0.15);
+    border-radius: 30px;
+}
+
+.services-item__heading {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+
+    color: #10375c;
+}
+.services-item__desc {
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+
+    color: #575f66;
+}
+.services-item__icon-body {
+    margin-left: 19px;
+}
+
+.services-item:hover {
+    position: relative;
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
+}
+
+.services-btn {
+    margin-top: 75px;
 }
