@@ -108,7 +108,12 @@ a {
 .navbar__list {
     display: flex;
 }
-.action__login,
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__login,
 .navbar__link {
     padding: 4px 21px;
     font-weight: 300;
@@ -138,7 +143,7 @@ a {
     border-radius: 50%;
     background-color: #fff;
 }
-.action__signup {
+.header-action__signup {
     --height: 44px;
     min-width: 104px;
 }
@@ -146,4 +151,74 @@ a {
 .btn:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+
+.hero {
+    margin-top: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero__content {
+    flex-shrink: 0;
+    width: 44%;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+.hero__heading {
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    /* or 167% */
+
+    color: #c9d2da;
+}
+.hero__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+.hero__phone {
+    margin-left: 38px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    /* identical to box height, or 167% */
+
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.hero__media {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    border-radius: 22px;
+    object-fit: cover;
+}
+.hero__img:first-child {
+    position: relative;
+    margin-right: -6px;
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
 }
