@@ -25,6 +25,22 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    --height: 60px;
+    display: inline-block;
+    padding: 0 20px;
+    min-width: 205px;
+    line-height: var(--height);
+    height: var(--height);
+    color: #fff;
+    background: #2e80ce;
+    border-radius: 99px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    border: 1px solid #2e80ce;
+}
+
 /* =====Header====== */
 
 .header {
@@ -74,4 +90,60 @@ a {
 .logo__brand--small {
     font-weight: 300;
     font-size: 1.2em;
+}
+
+.header {
+    padding-top: 30px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+}
+
+.navbar__list {
+    display: flex;
+}
+.action__login,
+.navbar__link {
+    padding: 4px 21px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    /* line-height: 1.75; */
+    /* identical to box height, or 175% */
+    color: #c9d2da;
+}
+.navbar__link:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #fff;
+}
+
+.navbar__item--active {
+    text-shadow: 1px 0 0 currentColor;
+    color: #fff;
+}
+
+.navbar__item--active::before {
+    position: relative;
+    left: -6px;
+    top: -2px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.action__signup {
+    --height: 44px;
+    min-width: 104px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
