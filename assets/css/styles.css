@@ -554,3 +554,60 @@ a {
 .member__contol--icon {
     rotate: 180deg;
 }
+/* =====install===== */
+.install {
+    margin-top: 180px;
+    padding-bottom: 70px;
+}
+
+.install__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    background: #2e80ce;
+}
+
+.install__img {
+    display: block;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    margin-top: -95px;
+}
+
+.install__content {
+    max-width: 586px;
+}
+.install__heading {
+    max-width: 489px;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 60px;
+    /* or 120% */
+
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+}
+
+.install__desc {
+    max-width: 586px;
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    /* or 167% */
+
+    color: #ffffff;
+}
+.install__row {
+    display: flex;
+    margin-top: 38px;
+    column-gap: 28px;
+}
+
+.install__btn .install__btn--img {
+    height: 40px;
+    width: 135px;
+}
